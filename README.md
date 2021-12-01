@@ -8,8 +8,21 @@
 ![kibana_5](imgs/kibana_5.png)
 #### 6. Попробуйте запустить playbook на этом окружении с флагом `--check`.
 ansible-playbook -i inventory/prod site.yml --check
+![kibana_6](imgs/kibana_6.png)
 #### 7. Запустите playbook на `prod.yml` окружении с флагом `--diff`. Убедитесь, что изменения на системе произведены.
+ansible-playbook -i inventory/prod site.yml --diff
+![kibana_7_1](imgs/kibana_7_1.png)
+![kibana_7_2](imgs/kibana_7_2.png)
+![kibana_7_3](imgs/kibana_7_3.png)
+![kibana_7_4](imgs/kibana_7_4.png)
+![kibana_7_5](imgs/kibana_7_5.png)
+![kibana_7_6](imgs/kibana_7_6.png)
+Доступность Elasticsearch:
+![elastic_available](imgs/elastic_available.png)
+Доступность Kibana:
+![kibana_available](imgs/kibana_available.png)
 #### 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
+![kibana_8](imgs/kibana_8.png)
 #### Filebeat
 ###### 1. Допишите playbook: нужно сделать ещё один play, который устанавливает и настраивает kibana.
 ###### 2. При создании tasks рекомендую использовать модули: `get_url`, `template`, `yum`, `apt`.

@@ -53,7 +53,7 @@
         dest: /etc/kibana/kibana.yml
         mode: 0755
       notify: restart Kibana
-- name: Install Kibana
+- name: Install Filebeat
   hosts: kibana
   handlers:
     - name: restart Kibana
