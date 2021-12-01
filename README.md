@@ -11,6 +11,7 @@ ansible-playbook -i inventory/prod site.yml --check
 ![kibana_6](imgs/kibana_6.png)
 #### 7. Запустите playbook на `prod.yml` окружении с флагом `--diff`. Убедитесь, что изменения на системе произведены.
 ansible-playbook -i inventory/prod site.yml --diff
+![kibana_7_1](imgs/kibana_7_0.png)
 ![kibana_7_1](imgs/kibana_7_1.png)
 ![kibana_7_2](imgs/kibana_7_2.png)
 ![kibana_7_3](imgs/kibana_7_3.png)
