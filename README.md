@@ -17,7 +17,7 @@ ansible-playbook -i inventory/prod site.yml --diff
 ![kibana_7_3](imgs/kibana_7_3.png)
 ![kibana_7_4](imgs/kibana_7_4.png)
 ![kibana_7_5](imgs/kibana_7_5.png)
-![kibana_7_6](imgs/kibana_7_6.png)
+![kibana_7_6_1](imgs/kibana_7_6_1.png)
 Доступность Elasticsearch:
 ![elastic_available](imgs/elastic_available.png)
 Доступность Kibana:
