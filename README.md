@@ -23,6 +23,7 @@ ansible-playbook -i inventory/prod site.yml --diff
 ![kibana_available](imgs/kibana_available.png)
 #### 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
 ![kibana_8](imgs/kibana_8.png)
+###### 9. Проделайте шаги с 1 до 8 для создания ещё одного play, который устанавливает и настраивает filebeat.
 #### Filebeat
 ###### 1. Допишите playbook: нужно сделать ещё один play, который устанавливает и настраивает kibana.
 ###### 2. При создании tasks рекомендую использовать модули: `get_url`, `template`, `yum`, `apt`.
@@ -31,10 +32,16 @@ ansible-playbook -i inventory/prod site.yml --diff
 #### 5. Запустите `ansible-lint site.yml` и исправьте ошибки, если они есть.
 ![filebeat_5](imgs/filebeat_5.png)
 #### 6. Попробуйте запустить playbook на этом окружении с флагом `--check`.
+![filebeat_6_1](imgs/filebeat_6_1.png)
+![filebeat_6_2](imgs/filebeat_6_2.png)
 #### 7. Запустите playbook на `prod.yml` окружении с флагом `--diff`. Убедитесь, что изменения на системе произведены.
+![filebeat_7_1](imgs/filebeat_6_1.png)
+![filebeat_7_2](imgs/filebeat_6_2.png)
+Доступность Filebeat:
+![filebeat_available](imgs/filebeat_available.png)
 #### 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
-
-###### 9. Проделайте шаги с 1 до 8 для создания ещё одного play, который устанавливает и настраивает filebeat.
+![filebeat_8_1](imgs/filebeat_8_1.png)
+![filebeat_8_2](imgs/filebeat_8_2.png)
 #### 10. Подготовьте README.md файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги.\
 Playbook
 1. Устанавливает Elasticsearch:
