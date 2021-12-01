@@ -36,8 +36,8 @@ ansible-playbook -i inventory/prod site.yml --diff
 ![filebeat_6_1](imgs/filebeat_6_1.png)
 ![filebeat_6_2](imgs/filebeat_6_2.png)
 #### 7. Запустите playbook на `prod.yml` окружении с флагом `--diff`. Убедитесь, что изменения на системе произведены.
-![filebeat_7_1](imgs/filebeat_6_1.png)
-![filebeat_7_2](imgs/filebeat_6_2.png)
+![filebeat_7_1](imgs/filebeat_7_1.png)
+![filebeat_7_2](imgs/filebeat_7_2.png)
 Доступность Filebeat:
 ![filebeat_available](imgs/filebeat_available.png)
 #### 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
