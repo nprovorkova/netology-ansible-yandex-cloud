@@ -18,9 +18,9 @@ ansible-playbook -i inventory/prod site.yml --diff
 ![kibana_7_4](imgs/kibana_7_4.png)
 ![kibana_7_5](imgs/kibana_7_5.png)
 ![kibana_7_6_1](imgs/kibana_7_6_1.png)
-Доступность Elasticsearch:<br>
+<br>Доступность Elasticsearch:<br>
 ![elastic_available](imgs/elastic_available.png)
-Доступность Kibana: <br>
+<br>Доступность Kibana: <br>
 ![kibana_available](imgs/kibana_available.png)
 #### 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
 ![kibana_8](imgs/kibana_8.png)
