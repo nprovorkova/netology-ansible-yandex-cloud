@@ -54,12 +54,12 @@
         mode: 0755
       notify: restart Kibana
 - name: Install Filebeat
-  hosts: kibana
+  hosts: filebeat
   handlers:
-    - name: restart Kibana
+    - name: restart Filebeat
       become: true
       service:
-        name: kibana
+        name: filebeat
         state: restarted
   tasks:
     - name: "Download Filebeat's rpm"
